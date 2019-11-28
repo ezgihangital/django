@@ -1,0 +1,27 @@
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="banner">
+    <div class="container">
+
+        <div class="navbar-header">
+
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="{% url 'home' %}" class="navbar-brand"><img src="/static/user2.png" width="40px"></a>
+        </div>
+
+        <nav class="collapse navbar-collapse" role="navigation">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{% url 'home' %}">Anasayfa</a></li>
+                <li><a href="{% url 'uygulama:create' %}" >Kişi Ekle</a></li>
+                <li><a href="{% url 'uygulama:index' %}">Kişilerim</a></li>
+            </ul>
+
+        </nav>
+
+    </div>

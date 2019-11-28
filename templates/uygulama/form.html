@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+{% block body %}
+    <form method="POST">
+
+        {% csrf_token %}
+        <h1><b>Yeni kişi ekleyin</b></h1>
+        <img src="/static/user.jpg " width="300px">
+        {{form.as_p}}
+        <input type="submit" value="Ekle/Güncelle" c>
+    </form>
+{% endblock %}
